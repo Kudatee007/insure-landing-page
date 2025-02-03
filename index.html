@@ -9,30 +9,34 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="style.css">
     <title>Insure landing page</title>
   </head>
   <body>
     <header>
-      <section class="top-bar">
+      <section class="top-bar flex-between">
         <a><img src="./assets/images/logo.svg" alt="" /></a>
-        <nav>
-          <a href="">How we work</a>
-          <a href="">Blog</a>
-          <a href="">Account</a>
-        </nav>
-        <button>View Plans</button>
+        <div class="nav-bar">
+          <nav class="top-bar-nav txt-md">
+            <a href="">How we work</a>
+            <a href="">Blog</a>
+            <a href="">Account</a>
+          </nav>
+          <button class="nav-btn btn txt-md">View Plans</button>
+        <!-- <img src="./assets/images/icon-hamburger.svg" alt="" /> -->
+      </div>
       </section>
-      <section class="hero-content">
+      <section class="hero-content flex-between">
         <section>
-          <h1>Humanizing your insurance.</h1>
-          <p>
+          <hr>
+          <h1 class="title-h">Humanizing your insurance.</h1>
+          <p class="hero-p">
             Get your life insurance coverage easier and faster. We blend our
             expertise and technology to help you find the plan that’s right for
             you. Ensure you and your loved ones are protected.
           </p>
-          <button>View Plans</button>
+          <button class="view-plans-btn btn txt-md">View Plans</button>
         </section>
-        <section>
           <picture>
             <source
               media="(min-width: 800px)"
@@ -44,9 +48,8 @@
               srcset="/assets/images/image-intro-mobile.jpg"
               type="image/svg+xml"
             />
-            <img src="./assets/images/image-intro-mobile.jpg" alt="" />
+            <img src="./assets/images/image-intro-mobile.jpg" alt="" class="image-desktop"/>
           </picture>
-        </section>
       </section>
     </header>
     <main>
